@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Zilla+Slab:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Zilla+Slab:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sir Jerry and Lady Comfort Foundation</title>
+  </head>
+  <body>
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <div class="container">
+      <!-- Nav -->
+      <nav class="main-nav">
+        <img src="logo.jpg" alt="Microsoft" class="logo" />
+
+        <ul class="main-menu">
+          <li style="display: none;"><a href="#" id="home" class="log-in">Home <i class="fa fa-home"></i></a></li>
+          <li style="display: none;"><a href="#" id="activities" class="log-in">Activities <i class="fa fa-tasks"></i></a></li>
+          <li style="display: none;"><a href="#" id="donate" class="log-in">Donation <i class="fa fa-donate"></i></a></li>
+          <li style="display: none;"><a href="#" id="logout" class="log-in">Logout <i class="fa fa-user-plus"></i></a></li>
+          <li style="display: none;"><a href="#" id="login" class="log-out">Login <i class="fa fa-user"></i></a></li>
+          <li style="display: none;"><a href="#" id="register" class="log-out">Sign up <i class="fa fa-user-plus"></i></a></li>
+          <li style="display: none;"><a href="#" id="dashboard" class="log-in">Dashboard <i class="fa fa-tachometer"></i></a></li>
+          <li style="display: none;"><a href="#" id="contact" class="log-in">Contact <i class="fa fa-address-book"></i></a></li>
+        </ul>
+
+        <ul class="right-menu">
+          <!-- social icons -->
+          <li>
+            <a href="mailto:lightsinfo@gmail.com">
+              <i class="fa fa-envelope"></i>srg@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+2347058032078">
+              <i class="fas fa-phone"></i>+2347058032078
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Showcase -->
+      <header class="showcase" style="display: none;">
+        <h5>SIR JERRY AND LADY COMFORT FOUNDATION </h5>
+        <h2>NO ONE HAS EVER BECOME POOR FROM GIVING</h2>
+        
+        <a href="#" class="btn" id="join-">
+          GET IN TOUCH <i class="fa fa-user-plus"></i>
+        </a>
+      </header>
+
+      <!-- Home cards 1 -->
+      <section class="dynamics" style="display: none;">
+        
+      </section>
+    
+
+      <footer class="footer"> 
+          
+          <div class="social">
+            <ul class="right-menu">
+              <!-- social icons -->
+              <li>
+                <a href="mailto:lightsinfo@gmail.com">
+                  <i class="fa fa-envelope"></i>srg@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+2347058032078">
+                  <i class="fas fa-phone"></i>+2347058032078
+                </a>
+              </li>
+            </ul>
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Youtube</a>
+            <a href="">Twitter</a>
+          </div>
+          <br>
+          <p>&copy; Sir Jerry and Lady Comfort Foundation 2021</p>
+    </footer>
+    <div id="info-"></div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.0/firebase-storage.js"></script>
+    <script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyAYR6luBILKcqxpe22iegyqvm5AyUO-858",
+    authDomain: "foundation-c7a3f.firebaseapp.com",
+    projectId: "foundation-c7a3f",
+    storageBucket: "foundation-c7a3f.appspot.com",
+    messagingSenderId: "471768744435",
+    appId: "1:471768744435:web:6c9cf26d64778fa16a5286",
+    measurementId: "G-XS0ED1NNZZ"
+  };
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+  const storage = firebase.storage();
+</script>
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>
